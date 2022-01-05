@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    /*Depends on jQuery*/
+    font-size: 62.5%;
+    /*16px = 100% -So- 10px = 62.5%*/
+}
+
+body {
+    background-color: #1D1D1D;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+section {
+    overflow: hidden !important;
+}
+
+/*====================*/
+/*REUSEABLE COMPONENT*/
+/*====================*/
+.canvas {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+.text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+}
+
+
+.text-zone img {
+    width: 7rem !important;
+    margin: -4.5rem 0 1.2rem 1.5rem;
+    
+}
+
+.text-zone a {
+    font-weight: 300;
+}
+
+
+.text-zone h1 {
+    color: #fff;
+    font-size: 8rem;
+    line-height: 7.5rem;
+    margin: 0;
+    font-family: 'Exo', sans-serif;
+    font-weight: normal;
+    display: inline-block;
+}
+
+.h1-text h1:hover {
+    color: aquamarine
+}
+
+
+.h1-text::before {
+    content: '<h1>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #BABABB;
+    font-size: 1.8rem;
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+}
+
+.h1-text::after {
+    content: '<h1/>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #BABABB;
+    font-size: 1.8rem;
+    position: absolute;
+    bottom: 10rem;
+    right: -4rem;
+    
+}
+.h1-text{
+    padding-bottom: 3rem;
+}
+.text-zone h2 {
+    color: aquamarine;
+    margin-top: .9rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 3px;
+    -webkit-animation: myanim2 1s 2.5s backwards;
+    animation: myanim2 1s 2.5s backwards;
+}
+.text-zone h2::before{
+    content: '<p>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #BABABB;
+    font-size: 1.8rem;
+    position: absolute;
+    bottom: 10rem;
+    left: -2rem;
+}
+.p-text::after{
+    content: '<p/>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #BABABB;
+    font-size: 1.8rem;
+    position: absolute;
+    bottom: 4rem;
+    left: -2rem;
+    
+}
+
+.text-zone .flat-button {
+    color: aquamarine;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    padding: 6px 10px;
+    border: 1px solid aquamarine;
+    margin-top: 40px;
+    float: left;
+    border-radius: 4px;
+    opacity: 0;
+}
+
